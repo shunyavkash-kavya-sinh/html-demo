@@ -77,3 +77,26 @@ button:focus {
     background-color: aqua;
     color: yellow;
 }
+
+.has-class{
+    padding: 10px;
+    background-color: gold;
+}
+.has-class:has(p){
+    color: blue;
+}
+.nth-chiled1 p:nth-last-child(2){
+    background-color: blueviolet;
+}
+
+.focus .focus-button{
+   padding: 15px 20px;
+   background-color: aquamarine;
+   color: black;
+   border-radius: 30px;
+}
+
+.focus .focus-button:focus{
+   background-color: black;
+   color: white;
+ }

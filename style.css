@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div+p {
+    background-color: pink;
+}
+
+
+div~span {
+    background-color: pink;
+}
+
+div .span-class {
+    background-color: blue;
+}
+
+section {
+    padding: 20px;
+}
+
+.focus {
+    width: 300px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+.focus:focus-within {
+    background-color: antiquewhite;
+    color: black;
+    border: 1px solid black;
+}
+
+button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 0;
+    background-color: brown;
+    color: white;
+}
+
+button:focus-visible {
+    border: 5px solid red;
+}
+
+button:focus {
+    box-shadow: 2px 2px 5px 5px black;
+}
+
+
+.check-box label input[type="checkbox"] {
+    appearance: none;
+    width: 35px;
+    height: 25px;
+    border: 1px solid black;
+    position: relative;
+    background-color: rebeccapurple;
+}
+
+.check-box label input[type="checkbox"]:checked::after {
+    content: '✔';
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    color: white;    
+}
+
+.first-li::first-line{
+    background-color: green;
+    color: white;
+}
+
+.first-li::selection{
+    background-color: aqua;
+    color: yellow;
+}
